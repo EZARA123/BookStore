@@ -8,4 +8,5 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/books', bookController.viewAll);
+router.get('/books/profile/:id', bookController.viewProfile);
 module.exports = router;
